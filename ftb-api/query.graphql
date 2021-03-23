@@ -1,0 +1,92 @@
+query AreaProfileData($geoType: String!, $geoCode: [String!]!) {
+  residents: dataset(name:"Usual-Residents") {
+    total: table(
+      variables: [$geoType],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    age: table(
+      variables: [$geoType, "AGE_T007A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    relationship: table(
+      variables: [$geoType, "MARSTAT_T006A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    ethnicity: table(
+      variables: [$geoType, "ETHPUK11_T006A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    birthplace: table(
+      variables: [$geoType, "COB_R010A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+  }
+  households: dataset(name:"Household-Ref-Persons") {
+    total: table(
+      variables: [$geoType],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    composition: table(
+      variables: [$geoType, "AHCHUK11_R007A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    accommodation: table(
+      variables: [$geoType, "TYPACCOM_T006A"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+    tenure: table(
+      variables: [$geoType, "TENHUK11_T007B"],
+      filters: [{variable: $geoType, codes: $geoCode}]
+    )
+    {
+      ...tableDimensions
+      values
+    }
+  }
+}
+
+fragment tableDimensions on Table {
+  dimensions {
+    count
+    categories {
+      code
+      label
+    }
+    variable {
+      name
+      label
+    }
+  }
+}
