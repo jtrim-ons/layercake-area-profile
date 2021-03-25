@@ -1,3 +1,7 @@
 src/usernameColonPassword.js
 *.bak
 *.bak?
+ftb-api/
+little-scripts/
+public/build/
+node_modules/
