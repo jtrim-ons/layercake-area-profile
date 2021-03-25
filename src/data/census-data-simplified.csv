@@ -1,0 +1,145 @@
+DATE,GEOGRAPHY,GEOGRAPHY_NAME,GEOGRAPHY_CODE,GEOGRAPHY_TYPE,CELL,CELL_NAME,CELL_CODE,CELL_TYPE,MEASURES,OBS_VALUE,OBS_STATUS
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),0,All usual residents,KS102EW0001,Age,20100,598376,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),0,All usual residents,KS102EW0001,Age,20301,100.0,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),1,Age 0 to 4,KS102EW0002,Age,20100,31040,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),1,Age 0 to 4,KS102EW0002,Age,20301,5.2,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),2,Age 5 to 7,KS102EW0003,Age,20100,18505,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),2,Age 5 to 7,KS102EW0003,Age,20301,3.1,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),3,Age 8 to 9,KS102EW0004,Age,20100,12344,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),3,Age 8 to 9,KS102EW0004,Age,20301,2.1,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),4,Age 10 to 14,KS102EW0005,Age,20100,34410,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),4,Age 10 to 14,KS102EW0005,Age,20301,5.8,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),5,Age 15,KS102EW0006,Age,20100,7406,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),5,Age 15,KS102EW0006,Age,20301,1.2,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),6,Age 16 to 17,KS102EW0007,Age,20100,15019,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),6,Age 16 to 17,KS102EW0007,Age,20301,2.5,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),7,Age 18 to 19,KS102EW0008,Age,20100,13634,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),7,Age 18 to 19,KS102EW0008,Age,20301,2.3,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),8,Age 20 to 24,KS102EW0009,Age,20100,31394,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),8,Age 20 to 24,KS102EW0009,Age,20301,5.2,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),9,Age 25 to 29,KS102EW0010,Age,20100,29923,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),9,Age 25 to 29,KS102EW0010,Age,20301,5.0,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),10,Age 30 to 44,KS102EW0011,Age,20100,106914,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),10,Age 30 to 44,KS102EW0011,Age,20301,17.9,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),11,Age 45 to 59,KS102EW0012,Age,20100,129966,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),11,Age 45 to 59,KS102EW0012,Age,20301,21.7,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),12,Age 60 to 64,KS102EW0013,Age,20100,44622,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),12,Age 60 to 64,KS102EW0013,Age,20301,7.5,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),13,Age 65 to 74,KS102EW0014,Age,20100,65334,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),13,Age 65 to 74,KS102EW0014,Age,20301,10.9,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),14,Age 75 to 84,KS102EW0015,Age,20100,41076,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),14,Age 75 to 84,KS102EW0015,Age,20301,6.9,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),15,Age 85 to 89,KS102EW0016,Age,20100,10891,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),15,Age 85 to 89,KS102EW0016,Age,20301,1.8,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),16,Age 90 and over,KS102EW0017,Age,20100,5898,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),16,Age 90 and over,KS102EW0017,Age,20301,1.0,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),18,Median Age,KS102EW0019,Age,20100,44.0,A
+2011,1941962793,North Yorkshire,E10000023,local authorities: county / unitary (prior to April 2015),18,Median Age,KS102EW0019,Age,20301,,Q
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),0,All usual residents,KS102EW0001,Age,20100,157869,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),0,All usual residents,KS102EW0001,Age,20301,100.0,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),1,Age 0 to 4,KS102EW0002,Age,20100,8677,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),1,Age 0 to 4,KS102EW0002,Age,20301,5.5,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),2,Age 5 to 7,KS102EW0003,Age,20100,5227,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),2,Age 5 to 7,KS102EW0003,Age,20301,3.3,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),3,Age 8 to 9,KS102EW0004,Age,20100,3481,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),3,Age 8 to 9,KS102EW0004,Age,20301,2.2,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),4,Age 10 to 14,KS102EW0005,Age,20100,9432,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),4,Age 10 to 14,KS102EW0005,Age,20301,6.0,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),5,Age 15,KS102EW0006,Age,20100,2016,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),5,Age 15,KS102EW0006,Age,20301,1.3,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),6,Age 16 to 17,KS102EW0007,Age,20100,4132,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),6,Age 16 to 17,KS102EW0007,Age,20301,2.6,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),7,Age 18 to 19,KS102EW0008,Age,20100,3241,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),7,Age 18 to 19,KS102EW0008,Age,20301,2.1,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),8,Age 20 to 24,KS102EW0009,Age,20100,7384,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),8,Age 20 to 24,KS102EW0009,Age,20301,4.7,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),9,Age 25 to 29,KS102EW0010,Age,20100,8169,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),9,Age 25 to 29,KS102EW0010,Age,20301,5.2,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),10,Age 30 to 44,KS102EW0011,Age,20100,30555,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),10,Age 30 to 44,KS102EW0011,Age,20301,19.4,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),11,Age 45 to 59,KS102EW0012,Age,20100,33987,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),11,Age 45 to 59,KS102EW0012,Age,20301,21.5,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),12,Age 60 to 64,KS102EW0013,Age,20100,10674,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),12,Age 60 to 64,KS102EW0013,Age,20301,6.8,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),13,Age 65 to 74,KS102EW0014,Age,20100,15896,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),13,Age 65 to 74,KS102EW0014,Age,20301,10.1,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),14,Age 75 to 84,KS102EW0015,Age,20100,10382,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),14,Age 75 to 84,KS102EW0015,Age,20301,6.6,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),15,Age 85 to 89,KS102EW0016,Age,20100,2927,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),15,Age 85 to 89,KS102EW0016,Age,20301,1.9,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),16,Age 90 and over,KS102EW0017,Age,20100,1689,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),16,Age 90 and over,KS102EW0017,Age,20301,1.1,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),18,Median Age,KS102EW0019,Age,20100,43.0,A
+2011,1946157115,Harrogate,E07000165,local authorities: district / unitary (prior to April 2015),18,Median Age,KS102EW0019,Age,20301,,Q
+2011,2092957699,England,E92000001,countries,0,All usual residents,KS102EW0001,Age,20100,53012456,A
+2011,2092957699,England,E92000001,countries,0,All usual residents,KS102EW0001,Age,20301,100.0,A
+2011,2092957699,England,E92000001,countries,1,Age 0 to 4,KS102EW0002,Age,20100,3318449,A
+2011,2092957699,England,E92000001,countries,1,Age 0 to 4,KS102EW0002,Age,20301,6.3,A
+2011,2092957699,England,E92000001,countries,2,Age 5 to 7,KS102EW0003,Age,20100,1827610,A
+2011,2092957699,England,E92000001,countries,2,Age 5 to 7,KS102EW0003,Age,20301,3.4,A
+2011,2092957699,England,E92000001,countries,3,Age 8 to 9,KS102EW0004,Age,20100,1145022,A
+2011,2092957699,England,E92000001,countries,3,Age 8 to 9,KS102EW0004,Age,20301,2.2,A
+2011,2092957699,England,E92000001,countries,4,Age 10 to 14,KS102EW0005,Age,20100,3080929,A
+2011,2092957699,England,E92000001,countries,4,Age 10 to 14,KS102EW0005,Age,20301,5.8,A
+2011,2092957699,England,E92000001,countries,5,Age 15,KS102EW0006,Age,20100,650826,A
+2011,2092957699,England,E92000001,countries,5,Age 15,KS102EW0006,Age,20301,1.2,A
+2011,2092957699,England,E92000001,countries,6,Age 16 to 17,KS102EW0007,Age,20100,1314124,A
+2011,2092957699,England,E92000001,countries,6,Age 16 to 17,KS102EW0007,Age,20301,2.5,A
+2011,2092957699,England,E92000001,countries,7,Age 18 to 19,KS102EW0008,Age,20100,1375315,A
+2011,2092957699,England,E92000001,countries,7,Age 18 to 19,KS102EW0008,Age,20301,2.6,A
+2011,2092957699,England,E92000001,countries,8,Age 20 to 24,KS102EW0009,Age,20100,3595321,A
+2011,2092957699,England,E92000001,countries,8,Age 20 to 24,KS102EW0009,Age,20301,6.8,A
+2011,2092957699,England,E92000001,countries,9,Age 25 to 29,KS102EW0010,Age,20100,3650881,A
+2011,2092957699,England,E92000001,countries,9,Age 25 to 29,KS102EW0010,Age,20301,6.9,A
+2011,2092957699,England,E92000001,countries,10,Age 30 to 44,KS102EW0011,Age,20100,10944271,A
+2011,2092957699,England,E92000001,countries,10,Age 30 to 44,KS102EW0011,Age,20301,20.6,A
+2011,2092957699,England,E92000001,countries,11,Age 45 to 59,KS102EW0012,Age,20100,10276902,A
+2011,2092957699,England,E92000001,countries,11,Age 45 to 59,KS102EW0012,Age,20301,19.4,A
+2011,2092957699,England,E92000001,countries,12,Age 60 to 64,KS102EW0013,Age,20100,3172277,A
+2011,2092957699,England,E92000001,countries,12,Age 60 to 64,KS102EW0013,Age,20301,6.0,A
+2011,2092957699,England,E92000001,countries,13,Age 65 to 74,KS102EW0014,Age,20100,4552283,A
+2011,2092957699,England,E92000001,countries,13,Age 65 to 74,KS102EW0014,Age,20301,8.6,A
+2011,2092957699,England,E92000001,countries,14,Age 75 to 84,KS102EW0015,Age,20100,2928118,A
+2011,2092957699,England,E92000001,countries,14,Age 75 to 84,KS102EW0015,Age,20301,5.5,A
+2011,2092957699,England,E92000001,countries,15,Age 85 to 89,KS102EW0016,Age,20100,776311,A
+2011,2092957699,England,E92000001,countries,15,Age 85 to 89,KS102EW0016,Age,20301,1.5,A
+2011,2092957699,England,E92000001,countries,16,Age 90 and over,KS102EW0017,Age,20100,403817,A
+2011,2092957699,England,E92000001,countries,16,Age 90 and over,KS102EW0017,Age,20301,0.8,A
+2011,2092957699,England,E92000001,countries,18,Median Age,KS102EW0019,Age,20100,39.0,A
+2011,2092957699,England,E92000001,countries,18,Median Age,KS102EW0019,Age,20301,,Q
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,0,All usual residents,KS102EW0001,Age,20100,5283733,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,0,All usual residents,KS102EW0001,Age,20301,100.0,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,1,Age 0 to 4,KS102EW0002,Age,20100,328447,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,1,Age 0 to 4,KS102EW0002,Age,20301,6.2,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,2,Age 5 to 7,KS102EW0003,Age,20100,182818,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,2,Age 5 to 7,KS102EW0003,Age,20301,3.5,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,3,Age 8 to 9,KS102EW0004,Age,20100,114657,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,3,Age 8 to 9,KS102EW0004,Age,20301,2.2,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,4,Age 10 to 14,KS102EW0005,Age,20100,306096,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,4,Age 10 to 14,KS102EW0005,Age,20301,5.8,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,5,Age 15,KS102EW0006,Age,20100,65774,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,5,Age 15,KS102EW0006,Age,20301,1.2,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,6,Age 16 to 17,KS102EW0007,Age,20100,130943,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,6,Age 16 to 17,KS102EW0007,Age,20301,2.5,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,7,Age 18 to 19,KS102EW0008,Age,20100,151928,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,7,Age 18 to 19,KS102EW0008,Age,20301,2.9,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,8,Age 20 to 24,KS102EW0009,Age,20100,382679,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,8,Age 20 to 24,KS102EW0009,Age,20301,7.2,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,9,Age 25 to 29,KS102EW0010,Age,20100,347304,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,9,Age 25 to 29,KS102EW0010,Age,20301,6.6,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,10,Age 30 to 44,KS102EW0011,Age,20100,1042121,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,10,Age 30 to 44,KS102EW0011,Age,20301,19.7,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,11,Age 45 to 59,KS102EW0012,Age,20100,1031066,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,11,Age 45 to 59,KS102EW0012,Age,20301,19.5,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,12,Age 60 to 64,KS102EW0013,Age,20100,325329,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,12,Age 60 to 64,KS102EW0013,Age,20301,6.2,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,13,Age 65 to 74,KS102EW0014,Age,20100,463849,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,13,Age 65 to 74,KS102EW0014,Age,20301,8.8,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,14,Age 75 to 84,KS102EW0015,Age,20100,296421,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,14,Age 75 to 84,KS102EW0015,Age,20301,5.6,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,15,Age 85 to 89,KS102EW0016,Age,20100,75868,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,15,Age 85 to 89,KS102EW0016,Age,20301,1.4,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,16,Age 90 and over,KS102EW0017,Age,20100,38433,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,16,Age 90 and over,KS102EW0017,Age,20301,0.7,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,18,Median Age,KS102EW0019,Age,20100,39.0,A
+2011,2013265923,Yorkshire and The Humber,E12000003,regions,18,Median Age,KS102EW0019,Age,20301,,Q
