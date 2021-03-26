@@ -212,7 +212,7 @@
 		{name:"Households", queryParts: householdQueryParts, key: "households"}
 	] as section}
   <div class="container">
-    <h2>{section.name}</h2>
+    <h2>Data on {selectedLad.name}'s {section.name}</h2>
   </div>
 
   {#await ftbData}
