@@ -8,15 +8,39 @@
   import AxisY from './components/AxisY.svelte';
 
 	import GroupedBar from './GroupedBar.svelte';
+	import BarWithReferenceLines from './BarWithReferenceLines.svelte';
   import Key from './Key.svelte';
 
-  let colours = ['#1b9e77','#d95f02','#7570b3'];
+  let colours = ['#2b8cbe', '#a6bddb', '#ece7f2'];
+  let coloursWitReferenceLine = ['#a6cee3','#d95f02','#e6ab02'];
 
-  const _places = [
-    { "geoType": "LA", "geoCode": ["synE07000165"] },
-    { "geoType": "REGION", "geoCode": ["synE12000003"] },
-    { "geoType": "COUNTRY", "geoCode": ["synE92000001"] }
+	const xMaxFn = data => Math.max(...data.map(d => Math.max(...data.keys.map(k => d[k]))));
+
+	const lads = [
+    {name:"Barnsley",code:"synE08000016"},
+    {name:"Bradford",code:"synE08000032"},
+    {name:"Calderdale",code:"synE08000033"},
+    {name:"Craven",code:"synE07000163"},
+    {name:"Doncaster",code:"synE08000017"},
+    {name:"East Riding of Yorkshire",code:"synE06000011"},
+    {name:"Hambleton",code:"synE07000164"},
+    {name:"Harrogate",code:"synE07000165"},
+    {name:"Kingston upon Hull, City of",code:"synE06000010"},
+    {name:"Kirklees",code:"synE08000034"},
+    {name:"Leeds",code:"synE08000035"},
+    {name:"North East Lincolnshire",code:"synE06000012"},
+    {name:"North Lincolnshire",code:"synE06000013"},
+    {name:"Richmondshire",code:"synE07000166"},
+    {name:"Rotherham",code:"synE08000018"},
+    {name:"Ryedale",code:"synE07000167"},
+    {name:"Scarborough",code:"synE07000168"},
+    {name:"Selby",code:"synE07000169"},
+    {name:"Sheffield",code:"synE08000019"},
+    {name:"Wakefield",code:"synE08000036"},
+    {name:"York",code:"synE06000014"}
   ]
+
+	let selectedLad = lads[0];
 
   const residentQueryParts = [
     ["Total", ""],
@@ -32,12 +56,12 @@
     ["Tenure", "TENHUK11_T007B"]
   ];
 
-  async function reshapeData(data) {
+  async function reshapeData(data, places) {
     data = await data;
     console.log(data);
     let result = {"households":{}, "residents":{}};
-    result.places = _places.map(d => d.geoCode[0]);
-    let placeTypes = _places.map(d => d.geoType);
+    result.places = places.map(d => d.geoCode[0]);
+    let placeTypes = places.map(d => d.geoType);
 
 		let placeNameLookup = {};
 		placeTypes.forEach((d, i) => {placeNameLookup[d] = data[i].data.residents.Total.dimensions[0].categories[0].label});
@@ -63,7 +87,7 @@
       placeTypes.forEach((d, i) => {subData.forEach((_, j) =>
 					{subData[j][d] = data[i].data.households[key].values[j] / householdTotalsByPlaceType[i];})});
       subData.keys = placeTypes;
-			subData.colours = colours;
+			subData.colours = coloursWitReferenceLine;
 			subData.name = key;
 			subData.placeNameLookup = placeNameLookup;
       result.households[key] = subData;
@@ -72,12 +96,24 @@
     return result;
   }
 
-  let ftbData = reshapeData(
-			Promise.all(
-  				_places.map(
-							place => queryCantabularGraphQL(residentQueryParts, householdQueryParts, place))));
+  let ftbData;
 
-	let xMax = data => Math.max(...data.map(d => Math.max(...data.keys.map(k => d[k]))));
+	function setPlace(lad) {
+		return () => {
+			selectedLad = lad;
+			let places = [
+				{ "geoType": "LA", "geoCode": [selectedLad.code] },
+				{ "geoType": "REGION", "geoCode": ["synE12000003"] },
+				{ "geoType": "COUNTRY", "geoCode": ["synE92000001"] }
+			]
+			ftbData = reshapeData(
+					Promise.all(
+							places.map(
+									place => queryCantabularGraphQL(residentQueryParts, householdQueryParts, place))), places);
+		}
+	}
+
+	setPlace(selectedLad)();
 </script>
 
 <style>
@@ -90,6 +126,7 @@
 		border-bottom: 3px solid #aaa;
 	}
 	h2 {
+		margin-top: 50px;
 		color: #444;
 	}
   h3, h4 {
@@ -139,10 +176,35 @@
   h4 {
     font-size: 14px;
   }
+	button {
+		cursor: pointer;
+		padding: 4px;
+		margin: 2px;
+		background-color: #2b8cbe;
+		border: 1px solid white;
+		border-radius: 5px;
+		color: white;
+    box-shadow: 0px 3px 5px #ccc;
+	}
+	button.selected {
+    box-shadow: none;
+		background-color: #155a7d;
+	}
 </style>
 
   <div class="container">
-    <h1>Census area profile: Harrogate</h1>
+    <h1>Census area profile: {selectedLad.name}</h1>
+  </div>
+
+  <div class="container">
+    <h2>Select a local authority district</h2>
+		{#each lads as lad}
+			<button
+					class:selected="{lad===selectedLad}"
+					on:click="{setPlace(lad)}">
+				{lad.name}
+			</button>
+		{/each}
   </div>
 
 	{#each [
@@ -171,7 +233,8 @@
           		y="key"
           		yScale={scaleBand().paddingInner([0.05]).round(true)}
           		yDomain={data.map(d => d.key)}
-          		xDomain={[0, xMax(data)]}
+          		yRange={ ({ width, height }) => [height,height*.1] }
+          		xDomain={[0, xMaxFn(data)]}
           		data={data}
           	>
           		<Svg>
@@ -184,12 +247,18 @@
           			<AxisY
           				gridlines={false}
           			/>
-          			<GroupedBar/>
+								{#if section.name==="Residents"}
+									<GroupedBar/>
+								{/if}
+								{#if section.name==="Households"}
+									<BarWithReferenceLines/>
+								{/if}
           		</Svg>
           		<Html pointerEvents={false}>
                 <Key
                   align='end'
                   shape='square'
+									showReferenceLines={section.name==="Households"}
 									lookup={data.placeNameLookup}
                 />
               </Html>

@@ -1,6 +1,8 @@
 <script>
   import { getContext } from 'svelte';
 
+	export let showReferenceLines = false;
+
   /* --------------------------------------------
    * Can be: "circle", "line" or "square"
    */
@@ -38,8 +40,10 @@
 <style>
   .key {
     display: flex;
-		flex-direction: column;
-		float: right;
+    background-color: white;
+    padding: 3px;
+/*    flex-direction: column;
+    float: right;*/
   }
   .key-item {
     margin-right: 14px;
@@ -54,6 +58,9 @@
     border-radius: 50%;
   }
   .chip__square {
+  }
+  .chip__narrow {
+		width: 2px;
   }
   .chip__line:after {
     content: '';
@@ -74,7 +81,7 @@
   {#each $data.keys as item, i}
   <div class='key-item'>
     <div
-      class='chip chip__{shape}'
+      class={showReferenceLines && i>0 ? 'chip chip__narrow' : `chip chip__{shape}`}
       style='background: {$data.colours[i]};'
     ></div>
     <div class='name'>{displayName(item)}</div>
