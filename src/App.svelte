@@ -3,20 +3,22 @@
   import { scaleBand } from 'd3-scale';
   import { queryCantabularGraphQL } from './ftbUtils.js';
 
+  import usernameColonPassword from './usernameColonPassword.js';
+
   import Bar from './components/Bar.svelte';
   import AxisX from './components/AxisX.svelte';
   import AxisY from './components/AxisY.svelte';
 
-	import GroupedBar from './GroupedBar.svelte';
-	import BarWithReferenceLines from './BarWithReferenceLines.svelte';
+  import GroupedBar from './GroupedBar.svelte';
+  import BarWithReferenceLines from './BarWithReferenceLines.svelte';
   import Key from './Key.svelte';
 
   let colours = ['#2b8cbe', '#a6bddb', '#ece7f2'];
   let coloursWitReferenceLine = ['#a6cee3','#d95f02','#e6ab02'];
 
-	const xMaxFn = data => Math.max(...data.map(d => Math.max(...data.keys.map(k => d[k]))));
+  const xMaxFn = data => Math.max(...data.map(d => Math.max(...data.keys.map(k => d[k]))));
 
-	const lads = [
+  let lads = [
     {name:"Barnsley",code:"synE08000016"},
     {name:"Bradford",code:"synE08000032"},
     {name:"Calderdale",code:"synE08000033"},
@@ -39,8 +41,11 @@
     {name:"Wakefield",code:"synE08000036"},
     {name:"York",code:"synE06000014"}
   ]
+  if (usernameColonPassword === "") {
+    lads = lads.slice(0, 3);
+  }
 
-	let selectedLad = lads[0];
+  let selectedLad = lads[0];
 
   const residentQueryParts = [
     ["Total", ""],
@@ -63,33 +68,33 @@
     result.places = places.map(d => d.geoCode[0]);
     let placeTypes = places.map(d => d.geoType);
 
-		let placeNameLookup = {};
-		placeTypes.forEach((d, i) => {placeNameLookup[d] = data[i].data.residents.Total.dimensions[0].categories[0].label});
+    let placeNameLookup = {};
+    placeTypes.forEach((d, i) => {placeNameLookup[d] = data[i].data.residents.Total.dimensions[0].categories[0].label});
 
-		// TODO: avoid duplication in next parts
-		let residentTotalsByPlaceType = placeTypes.map((d, i) => data[i].data.residents.Total.values[0]);
+    // TODO: avoid duplication in next parts
+    let residentTotalsByPlaceType = placeTypes.map((d, i) => data[i].data.residents.Total.values[0]);
     for (let key of residentQueryParts.slice(1).map(d => d[0])) {
       let categories = data[0].data.residents[key].dimensions[1].categories;
       let subData = categories.map(d => ({key: d.label}));
       placeTypes.forEach((d, i) => {subData.forEach((_, j) =>
-					{subData[j][d] = data[i].data.residents[key].values[j] / residentTotalsByPlaceType[i];})});
+          {subData[j][d] = data[i].data.residents[key].values[j] / residentTotalsByPlaceType[i];})});
       subData.keys = placeTypes;
-			subData.colours = colours;
-			subData.name = key;
-			subData.placeNameLookup = placeNameLookup;
+      subData.colours = colours;
+      subData.name = key;
+      subData.placeNameLookup = placeNameLookup;
       result.residents[key] = subData;
     }
 
-		let householdTotalsByPlaceType = placeTypes.map((d, i) => data[i].data.households.Total.values[0]);
+    let householdTotalsByPlaceType = placeTypes.map((d, i) => data[i].data.households.Total.values[0]);
     for (let key of householdQueryParts.slice(1).map(d => d[0])) {
       let categories = data[0].data.households[key].dimensions[1].categories;
       let subData = categories.map(d => ({key: d.label}));
       placeTypes.forEach((d, i) => {subData.forEach((_, j) =>
-					{subData[j][d] = data[i].data.households[key].values[j] / householdTotalsByPlaceType[i];})});
+          {subData[j][d] = data[i].data.households[key].values[j] / householdTotalsByPlaceType[i];})});
       subData.keys = placeTypes;
-			subData.colours = coloursWitReferenceLine;
-			subData.name = key;
-			subData.placeNameLookup = placeNameLookup;
+      subData.colours = coloursWitReferenceLine;
+      subData.name = key;
+      subData.placeNameLookup = placeNameLookup;
       result.households[key] = subData;
     }
 
@@ -98,37 +103,47 @@
 
   let ftbData;
 
-	function setPlace(lad) {
-		return () => {
-			selectedLad = lad;
-			let places = [
-				{ "geoType": "LA", "geoCode": [selectedLad.code] },
-				{ "geoType": "REGION", "geoCode": ["synE12000003"] },
-				{ "geoType": "COUNTRY", "geoCode": ["synE92000001"] }
-			]
-			ftbData = reshapeData(
-					Promise.all(
-							places.map(
-									place => queryCantabularGraphQL(residentQueryParts, householdQueryParts, place))), places);
-		}
-	}
+  async function getJson(url) {
+    let response = await fetch(url);
+    return response.json();
+  }
 
-	setPlace(selectedLad)();
+  function setPlace(lad) {
+    return () => {
+      selectedLad = lad;
+      let places = [
+        { "geoType": "LA", "geoCode": [selectedLad.code] },
+        { "geoType": "REGION", "geoCode": ["synE12000003"] },
+        { "geoType": "COUNTRY", "geoCode": ["synE92000001"] }
+      ]
+
+      if (usernameColonPassword === "") {
+        ftbData = reshapeData(getJson('dummy-data/'+selectedLad.code+'.json'), places);
+      } else {
+        ftbData = reshapeData(
+            Promise.all(
+                places.map(
+                    place => queryCantabularGraphQL(residentQueryParts, householdQueryParts, place))), places);
+      }
+    }
+  }
+
+  setPlace(selectedLad)();
 </script>
 
 <style>
   :global(body) {
     background-color: #ededef;
   }
-	h1 {
-		color: #222;
-		padding-bottom: 3px;
-		border-bottom: 3px solid #aaa;
-	}
-	h2 {
-		margin-top: 50px;
-		color: #444;
-	}
+  h1 {
+    color: #222;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #aaa;
+  }
+  h2 {
+    margin-top: 50px;
+    color: #444;
+  }
   h3, h4 {
     margin: 10px 0 5px 0;
   }
@@ -170,26 +185,26 @@
     }
   } */
   .chart-container {
-	  display: block;
+    display: block;
     height: 280px;
   }
   h4 {
     font-size: 14px;
   }
-	button {
-		cursor: pointer;
-		padding: 4px;
-		margin: 2px;
-		background-color: #2b8cbe;
-		border: 1px solid white;
-		border-radius: 5px;
-		color: white;
+  button {
+    cursor: pointer;
+    padding: 4px;
+    margin: 2px;
+    background-color: #2b8cbe;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
     box-shadow: 0px 3px 5px #ccc;
-	}
-	button.selected {
+  }
+  button.selected {
     box-shadow: none;
-		background-color: #155a7d;
-	}
+    background-color: #155a7d;
+  }
 </style>
 
   <div class="container">
@@ -198,19 +213,19 @@
 
   <div class="container">
     <h2>Select a local authority district</h2>
-		{#each lads as lad}
-			<button
-					class:selected="{lad===selectedLad}"
-					on:click="{setPlace(lad)}">
-				{lad.name}
-			</button>
-		{/each}
+    {#each lads as lad}
+      <button
+          class:selected="{lad===selectedLad}"
+          on:click="{setPlace(lad)}">
+        {lad.name}
+      </button>
+    {/each}
   </div>
 
-	{#each [
-		{name:"Residents", queryParts: residentQueryParts, key: "residents"},
-		{name:"Households", queryParts: householdQueryParts, key: "households"}
-	] as section}
+  {#each [
+    {name:"Residents", queryParts: residentQueryParts, key: "residents"},
+    {name:"Households", queryParts: householdQueryParts, key: "households"}
+  ] as section}
   <div class="container">
     <h2>Data on {selectedLad.name}'s {section.name}</h2>
   </div>
@@ -227,42 +242,42 @@
       <div class="charts-container">
         <div class="chart-tile">
           <div class="chart-container">
-          	<LayerCake
-          		padding={{ top: 0, bottom: 20, left: 450 }}
-          		x={null}
-          		y="key"
-          		yScale={scaleBand().paddingInner([0.05]).round(true)}
-          		yDomain={data.map(d => d.key)}
-          		yRange={ ({ width, height }) => [height,height*.1] }
-          		xDomain={[0, xMaxFn(data)]}
-          		data={data}
-          	>
-          		<Svg>
-          			<AxisX
-          				gridlines={true}
-          				baseline={true}
-          				snapTicks={false}
-          				ticks=4
-          			/>
-          			<AxisY
-          				gridlines={false}
-          			/>
-								{#if section.name==="Residents"}
-									<GroupedBar/>
-								{/if}
-								{#if section.name==="Households"}
-									<BarWithReferenceLines/>
-								{/if}
-          		</Svg>
-          		<Html pointerEvents={false}>
+            <LayerCake
+              padding={{ top: 0, bottom: 20, left: 450 }}
+              x={null}
+              y="key"
+              yScale={scaleBand().paddingInner([0.05]).round(true)}
+              yDomain={data.map(d => d.key)}
+              yRange={ ({ width, height }) => [height,height*.1] }
+              xDomain={[0, xMaxFn(data)]}
+              data={data}
+            >
+              <Svg>
+                <AxisX
+                  gridlines={true}
+                  baseline={true}
+                  snapTicks={false}
+                  ticks=4
+                />
+                <AxisY
+                  gridlines={false}
+                />
+                {#if section.name==="Residents"}
+                  <GroupedBar/>
+                {/if}
+                {#if section.name==="Households"}
+                  <BarWithReferenceLines/>
+                {/if}
+              </Svg>
+              <Html pointerEvents={false}>
                 <Key
                   align='end'
                   shape='square'
-									showReferenceLines={section.name==="Households"}
-									lookup={data.placeNameLookup}
+                  showReferenceLines={section.name==="Households"}
+                  lookup={data.placeNameLookup}
                 />
               </Html>
-          	</LayerCake>
+            </LayerCake>
           </div>
         </div>
       </div>
@@ -271,3 +286,11 @@
   {/each}
   {/await}
   {/each}
+
+<!--  <div class="container">
+    {#await rawData}
+      <p>Fetching data...</p>
+    {:then data}
+      <pre>{JSON.stringify(data, null, ' ')}</pre>
+    {/await}
+  </div> -->

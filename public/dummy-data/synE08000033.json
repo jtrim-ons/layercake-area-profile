@@ -1,0 +1,1379 @@
+[
+ {
+  "data": {
+   "households": {
+    "Accommodation": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Whole house or bungalow: Detached"
+        },
+        {
+         "code": "2",
+         "label": "Whole house or bungalow: Semi-detached"
+        },
+        {
+         "code": "3",
+         "label": "Whole house or bungalow: Terraced (including end-terrace)"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 4,
+       "variable": {
+        "label": "Type of accommodation (4 categories)",
+        "name": "TYPACCOM_T006A"
+       }
+      }
+     ],
+     "values": [
+      17182,
+      30763,
+      22968,
+      6350
+     ]
+    },
+    "Composition": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-2",
+         "label": "One adult and no children"
+        },
+        {
+         "code": "3-4",
+         "label": "No adults or one adult and one or more children"
+        },
+        {
+         "code": "5,7",
+         "label": "Two or more adults and no children"
+        },
+        {
+         "code": "6,8",
+         "label": "Two or more adults and one or more children"
+        },
+        {
+         "code": "9",
+         "label": "Three or more adults and one or more children"
+        },
+        {
+         "code": "10",
+         "label": "Three or more adults and no children"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 7,
+       "variable": {
+        "label": "Alternative household composition (7 categories)",
+        "name": "AHCHUK11_R007A"
+       }
+      }
+     ],
+     "values": [
+      19280,
+      10381,
+      17428,
+      8740,
+      8962,
+      12223,
+      249
+     ]
+    },
+    "Tenure": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0",
+         "label": "Owned: Owned outright"
+        },
+        {
+         "code": "1-2",
+         "label": "Owned: Owned with a mortgage or loan or shared ownership"
+        },
+        {
+         "code": "3-4",
+         "label": "Rented: Social rented"
+        },
+        {
+         "code": "5-9",
+         "label": "Rented: Private rented or living rent free"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Tenure of household (5 categories)",
+        "name": "TENHUK11_T007B"
+       }
+      }
+     ],
+     "values": [
+      17072,
+      34532,
+      12111,
+      13269,
+      282
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      }
+     ],
+     "values": [
+      77263
+     ]
+    }
+   },
+   "residents": {
+    "Age": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0-15",
+         "label": "Age 0 to 15"
+        },
+        {
+         "code": "16-24",
+         "label": "Age 16 to 24"
+        },
+        {
+         "code": "25-34",
+         "label": "Age 25 to 34"
+        },
+        {
+         "code": "35-49",
+         "label": "Age 35 to 49"
+        },
+        {
+         "code": "50-64",
+         "label": "Age 50 to 64"
+        },
+        {
+         "code": "65-90",
+         "label": "Age 65 and over"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Age of individual (6 categories)",
+        "name": "AGE_T007A"
+       }
+      }
+     ],
+     "values": [
+      38590,
+      21188,
+      23821,
+      44573,
+      39460,
+      32557
+     ]
+    },
+    "Birthplace": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-5",
+         "label": "Europe: United Kingdom"
+        },
+        {
+         "code": "6",
+         "label": "Europe: Ireland"
+        },
+        {
+         "code": "7,9",
+         "label": "Europe: Other Europe: EU countries: Member countries in March 2001"
+        },
+        {
+         "code": "8,10",
+         "label": "Europe: Other Europe: EU countries: Accession countries April 2001 to March 2011"
+        },
+        {
+         "code": "11",
+         "label": "Europe: Other Europe: Rest of Europe"
+        },
+        {
+         "code": "12-15",
+         "label": "Africa"
+        },
+        {
+         "code": "16-23",
+         "label": "Middle East and Asia"
+        },
+        {
+         "code": "24-25",
+         "label": "The Americas and the Caribbean"
+        },
+        {
+         "code": "26",
+         "label": "Antarctica, Oceania (including Australasia) and other"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 10,
+       "variable": {
+        "label": "Country of birth (10 categories)",
+        "name": "COB_R010A"
+       }
+      }
+     ],
+     "values": [
+      184414,
+      718,
+      1835,
+      2636,
+      455,
+      1753,
+      7164,
+      905,
+      309,
+      0
+     ]
+    },
+    "Ethnicity": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-4",
+         "label": "White"
+        },
+        {
+         "code": "5-8",
+         "label": "Mixed/multiple ethnic group"
+        },
+        {
+         "code": "9-13",
+         "label": "Asian/Asian British"
+        },
+        {
+         "code": "14-16",
+         "label": "Black/African/Caribbean/Black British"
+        },
+        {
+         "code": "17-18",
+         "label": "Other ethnic group"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Ethnic group (6 categories)",
+        "name": "ETHPUK11_T006A"
+       }
+      }
+     ],
+     "values": [
+      180309,
+      2561,
+      14598,
+      1833,
+      888,
+      0
+     ]
+    },
+    "Relationship": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Single (never married or never registered a same-sex civil partnership)"
+        },
+        {
+         "code": "2-3",
+         "label": "Married or in a registered same-sex civil partnership"
+        },
+        {
+         "code": "4",
+         "label": "Separated (but still legally married or still legally in a same-sex civil partnership)"
+        },
+        {
+         "code": "5",
+         "label": "Divorced or formerly in a same-sex civil partnership which is now legally dissolved"
+        },
+        {
+         "code": "6",
+         "label": "Widowed or surviving partner from a same-sex civil partnership"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Marital status (5 categories)",
+        "name": "MARSTAT_T006A"
+       }
+      }
+     ],
+     "values": [
+      90039,
+      77881,
+      4524,
+      16288,
+      11457
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE08000033",
+         "label": "Calderdale"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Local Authority",
+        "name": "LA"
+       }
+      }
+     ],
+     "values": [
+      200189
+     ]
+    }
+   }
+  }
+ },
+ {
+  "data": {
+   "households": {
+    "Accommodation": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Whole house or bungalow: Detached"
+        },
+        {
+         "code": "2",
+         "label": "Whole house or bungalow: Semi-detached"
+        },
+        {
+         "code": "3",
+         "label": "Whole house or bungalow: Terraced (including end-terrace)"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 4,
+       "variable": {
+        "label": "Type of accommodation (4 categories)",
+        "name": "TYPACCOM_T006A"
+       }
+      }
+     ],
+     "values": [
+      454692,
+      804968,
+      600926,
+      180056
+     ]
+    },
+    "Composition": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-2",
+         "label": "One adult and no children"
+        },
+        {
+         "code": "3-4",
+         "label": "No adults or one adult and one or more children"
+        },
+        {
+         "code": "5,7",
+         "label": "Two or more adults and no children"
+        },
+        {
+         "code": "6,8",
+         "label": "Two or more adults and one or more children"
+        },
+        {
+         "code": "9",
+         "label": "Three or more adults and one or more children"
+        },
+        {
+         "code": "10",
+         "label": "Three or more adults and no children"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 7,
+       "variable": {
+        "label": "Alternative household composition (7 categories)",
+        "name": "AHCHUK11_R007A"
+       }
+      }
+     ],
+     "values": [
+      516254,
+      263305,
+      467258,
+      219786,
+      229953,
+      337542,
+      6546
+     ]
+    },
+    "Tenure": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0",
+         "label": "Owned: Owned outright"
+        },
+        {
+         "code": "1-2",
+         "label": "Owned: Owned with a mortgage or loan or shared ownership"
+        },
+        {
+         "code": "3-4",
+         "label": "Rented: Social rented"
+        },
+        {
+         "code": "5-9",
+         "label": "Rented: Private rented or living rent free"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Tenure of household (5 categories)",
+        "name": "TENHUK11_T007B"
+       }
+      }
+     ],
+     "values": [
+      449416,
+      895017,
+      326388,
+      362412,
+      7411
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      }
+     ],
+     "values": [
+      2040644
+     ]
+    }
+   },
+   "residents": {
+    "Age": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0-15",
+         "label": "Age 0 to 15"
+        },
+        {
+         "code": "16-24",
+         "label": "Age 16 to 24"
+        },
+        {
+         "code": "25-34",
+         "label": "Age 25 to 34"
+        },
+        {
+         "code": "35-49",
+         "label": "Age 35 to 49"
+        },
+        {
+         "code": "50-64",
+         "label": "Age 50 to 64"
+        },
+        {
+         "code": "65-90",
+         "label": "Age 65 and over"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Age of individual (6 categories)",
+        "name": "AGE_T007A"
+       }
+      }
+     ],
+     "values": [
+      973921,
+      652847,
+      665837,
+      1103683,
+      984226,
+      895651
+     ]
+    },
+    "Birthplace": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-5",
+         "label": "Europe: United Kingdom"
+        },
+        {
+         "code": "6",
+         "label": "Europe: Ireland"
+        },
+        {
+         "code": "7,9",
+         "label": "Europe: Other Europe: EU countries: Member countries in March 2001"
+        },
+        {
+         "code": "8,10",
+         "label": "Europe: Other Europe: EU countries: Accession countries April 2001 to March 2011"
+        },
+        {
+         "code": "11",
+         "label": "Europe: Other Europe: Rest of Europe"
+        },
+        {
+         "code": "12-15",
+         "label": "Africa"
+        },
+        {
+         "code": "16-23",
+         "label": "Middle East and Asia"
+        },
+        {
+         "code": "24-25",
+         "label": "The Americas and the Caribbean"
+        },
+        {
+         "code": "26",
+         "label": "Antarctica, Oceania (including Australasia) and other"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 10,
+       "variable": {
+        "label": "Country of birth (10 categories)",
+        "name": "COB_R010A"
+       }
+      }
+     ],
+     "values": [
+      4815687,
+      20522,
+      48520,
+      75675,
+      14770,
+      64168,
+      200827,
+      28010,
+      7986,
+      0
+     ]
+    },
+    "Ethnicity": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-4",
+         "label": "White"
+        },
+        {
+         "code": "5-8",
+         "label": "Mixed/multiple ethnic group"
+        },
+        {
+         "code": "9-13",
+         "label": "Asian/Asian British"
+        },
+        {
+         "code": "14-16",
+         "label": "Black/African/Caribbean/Black British"
+        },
+        {
+         "code": "17-18",
+         "label": "Other ethnic group"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Ethnic group (6 categories)",
+        "name": "ETHPUK11_T006A"
+       }
+      }
+     ],
+     "values": [
+      4691629,
+      85798,
+      379794,
+      79202,
+      39742,
+      0
+     ]
+    },
+    "Relationship": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Single (never married or never registered a same-sex civil partnership)"
+        },
+        {
+         "code": "2-3",
+         "label": "Married or in a registered same-sex civil partnership"
+        },
+        {
+         "code": "4",
+         "label": "Separated (but still legally married or still legally in a same-sex civil partnership)"
+        },
+        {
+         "code": "5",
+         "label": "Divorced or formerly in a same-sex civil partnership which is now legally dissolved"
+        },
+        {
+         "code": "6",
+         "label": "Widowed or surviving partner from a same-sex civil partnership"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Marital status (5 categories)",
+        "name": "MARSTAT_T006A"
+       }
+      }
+     ],
+     "values": [
+      2416540,
+      2024703,
+      114670,
+      409978,
+      310274
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE12000003",
+         "label": "Yorkshire and The Humber"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Region",
+        "name": "REGION"
+       }
+      }
+     ],
+     "values": [
+      5276165
+     ]
+    }
+   }
+  }
+ },
+ {
+  "data": {
+   "households": {
+    "Accommodation": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Whole house or bungalow: Detached"
+        },
+        {
+         "code": "2",
+         "label": "Whole house or bungalow: Semi-detached"
+        },
+        {
+         "code": "3",
+         "label": "Whole house or bungalow: Terraced (including end-terrace)"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 4,
+       "variable": {
+        "label": "Type of accommodation (4 categories)",
+        "name": "TYPACCOM_T006A"
+       }
+      }
+     ],
+     "values": [
+      4935751,
+      6917562,
+      5428818,
+      3276957
+     ]
+    },
+    "Composition": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-2",
+         "label": "One adult and no children"
+        },
+        {
+         "code": "3-4",
+         "label": "No adults or one adult and one or more children"
+        },
+        {
+         "code": "5,7",
+         "label": "Two or more adults and no children"
+        },
+        {
+         "code": "6,8",
+         "label": "Two or more adults and one or more children"
+        },
+        {
+         "code": "9",
+         "label": "Three or more adults and one or more children"
+        },
+        {
+         "code": "10",
+         "label": "Three or more adults and no children"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 7,
+       "variable": {
+        "label": "Alternative household composition (7 categories)",
+        "name": "AHCHUK11_R007A"
+       }
+      }
+     ],
+     "values": [
+      5221078,
+      2648412,
+      4710280,
+      2199517,
+      2312623,
+      3384658,
+      82520
+     ]
+    },
+    "Tenure": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0",
+         "label": "Owned: Owned outright"
+        },
+        {
+         "code": "1-2",
+         "label": "Owned: Owned with a mortgage or loan or shared ownership"
+        },
+        {
+         "code": "3-4",
+         "label": "Rented: Social rented"
+        },
+        {
+         "code": "5-9",
+         "label": "Rented: Private rented or living rent free"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Tenure of household (5 categories)",
+        "name": "TENHUK11_T007B"
+       }
+      }
+     ],
+     "values": [
+      4408910,
+      8727450,
+      3442173,
+      3884837,
+      95717
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      }
+     ],
+     "values": [
+      20559088
+     ]
+    }
+   },
+   "residents": {
+    "Age": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "0-15",
+         "label": "Age 0 to 15"
+        },
+        {
+         "code": "16-24",
+         "label": "Age 16 to 24"
+        },
+        {
+         "code": "25-34",
+         "label": "Age 25 to 34"
+        },
+        {
+         "code": "35-49",
+         "label": "Age 35 to 49"
+        },
+        {
+         "code": "50-64",
+         "label": "Age 50 to 64"
+        },
+        {
+         "code": "65-90",
+         "label": "Age 65 and over"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Age of individual (6 categories)",
+        "name": "AGE_T007A"
+       }
+      }
+     ],
+     "values": [
+      9710552,
+      6142181,
+      7118568,
+      11391245,
+      9653104,
+      8862812
+     ]
+    },
+    "Birthplace": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-5",
+         "label": "Europe: United Kingdom"
+        },
+        {
+         "code": "6",
+         "label": "Europe: Ireland"
+        },
+        {
+         "code": "7,9",
+         "label": "Europe: Other Europe: EU countries: Member countries in March 2001"
+        },
+        {
+         "code": "8,10",
+         "label": "Europe: Other Europe: EU countries: Accession countries April 2001 to March 2011"
+        },
+        {
+         "code": "11",
+         "label": "Europe: Other Europe: Rest of Europe"
+        },
+        {
+         "code": "12-15",
+         "label": "Africa"
+        },
+        {
+         "code": "16-23",
+         "label": "Middle East and Asia"
+        },
+        {
+         "code": "24-25",
+         "label": "The Americas and the Caribbean"
+        },
+        {
+         "code": "26",
+         "label": "Antarctica, Oceania (including Australasia) and other"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 10,
+       "variable": {
+        "label": "Country of birth (10 categories)",
+        "name": "COB_R010A"
+       }
+      }
+     ],
+     "values": [
+      45509654,
+      403172,
+      917673,
+      1017997,
+      319433,
+      1354492,
+      2490165,
+      684655,
+      181221,
+      0
+     ]
+    },
+    "Ethnicity": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1-4",
+         "label": "White"
+        },
+        {
+         "code": "5-8",
+         "label": "Mixed/multiple ethnic group"
+        },
+        {
+         "code": "9-13",
+         "label": "Asian/Asian British"
+        },
+        {
+         "code": "14-16",
+         "label": "Black/African/Caribbean/Black British"
+        },
+        {
+         "code": "17-18",
+         "label": "Other ethnic group"
+        },
+        {
+         "code": "-9",
+         "label": "Not applicable"
+        }
+       ],
+       "count": 6,
+       "variable": {
+        "label": "Ethnic group (6 categories)",
+        "name": "ETHPUK11_T006A"
+       }
+      }
+     ],
+     "values": [
+      45270415,
+      1206352,
+      4039440,
+      1825837,
+      536418,
+      0
+     ]
+    },
+    "Relationship": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      },
+      {
+       "categories": [
+        {
+         "code": "1",
+         "label": "Single (never married or never registered a same-sex civil partnership)"
+        },
+        {
+         "code": "2-3",
+         "label": "Married or in a registered same-sex civil partnership"
+        },
+        {
+         "code": "4",
+         "label": "Separated (but still legally married or still legally in a same-sex civil partnership)"
+        },
+        {
+         "code": "5",
+         "label": "Divorced or formerly in a same-sex civil partnership which is now legally dissolved"
+        },
+        {
+         "code": "6",
+         "label": "Widowed or surviving partner from a same-sex civil partnership"
+        }
+       ],
+       "count": 5,
+       "variable": {
+        "label": "Marital status (5 categories)",
+        "name": "MARSTAT_T006A"
+       }
+      }
+     ],
+     "values": [
+      24538592,
+      20198292,
+      1169990,
+      4008153,
+      2963435
+     ]
+    },
+    "Total": {
+     "dimensions": [
+      {
+       "categories": [
+        {
+         "code": "synE92000001",
+         "label": "England"
+        }
+       ],
+       "count": 1,
+       "variable": {
+        "label": "Country",
+        "name": "COUNTRY"
+       }
+      }
+     ],
+     "values": [
+      52878462
+     ]
+    }
+   }
+  }
+ }
+]
